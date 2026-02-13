@@ -1,74 +1,71 @@
 {
   "personal": {
-    "name": "张三",
-    "title": "高级全栈工程师",
+    "name": "林茂贵",
+    "title": "架构管理岗",
     "avatar": "assets/avatar.svg",
-    "summary": "拥有8年软件开发经验的全栈工程师，专注于构建高性能、可扩展的Web应用。热衷于探索前沿技术，具备优秀的架构设计能力和团队协作精神。在多个大型项目中担任技术负责人，带领团队成功交付多个核心业务系统。",
-    "location": "北京市朝阳区",
-    "availability": "开放机会"
+    "summary": "热衷于探索前沿技术，具备优秀的架构设计能力和团队协作精神。",
+    "location": "广州市",
+    "availability": "在职观望机会"
   },
   "contact": {
-    "email": "zhangsan@example.com",
-    "phone": "+86 138-0000-0000",
-    "github": "https://github.com/zhangsan",
-    "linkedin": "https://linkedin.com/in/zhangsan",
-    "website": "https://zhangsan.dev",
-    "wechat": "zhangsan_dev"
+    "email": "linmaog@alumni.sysu.edu.cn",
+
+    "github": "https://github.com/NickyLam",
+    "linkedin": "暂无",
+    "website": "https://nickylam.github.io/resume",
+    "wechat": "Nicky_2333"
   },
   "education": [
     {
-      "school": "清华大学",
-      "degree": "计算机科学与技术 · 硕士",
-      "period": "2014 - 2017",
-      "location": "北京",
-      "highlights": [
-        "研究方向：分布式系统与云计算",
-        "GPA: 3.8/4.0，专业排名前5%",
-        "发表SCI论文2篇，获得国家奖学金"
-      ]
+      "school": "中山大学",
+      "degree": "软件工程 · 硕士",
+      "period": "2015 - 2017",
+      "location": "广州",
+      "highlights": ["研究方向：数据挖掘"]
     },
     {
-      "school": "北京大学",
-      "degree": "软件工程 · 学士",
+      "school": "中山大学",
+      "degree": "统计学 · 双专业",
+      "period": "2013 - 2015",
+      "location": "广州",
+      "highlights": ["主修课程：微积分、几何与代数、数理统计学"]
+    },
+    {
+      "school": "中山大学",
+      "degree": "地理信息系统GIS · 学士",
       "period": "2010 - 2014",
-      "location": "北京",
+      "location": "广州",
       "highlights": [
-        "主修课程：数据结构、算法设计、操作系统、计算机网络",
-        "获得ACM程序设计竞赛省级二等奖",
-        "担任学生会技术部部长"
+        "主修课程：数据结构、地理信息系统、遥感理论、自然地理学",
+        "担任学生会文体部部长"
       ]
     }
   ],
   "experience": [
     {
-      "company": "字节跳动",
-      "position": "高级技术专家",
-      "period": "2021.03 - 至今",
-      "location": "北京",
+      "company": "广东华兴银行股份有限公司",
+      "position": "架构管理岗",
+      "period": "2019.10 - 至今",
+      "location": "广州",
       "type": "全职",
-      "description": "负责抖音核心推荐系统的架构设计与优化，带领15人技术团队",
-      "achievements": [
-        "主导推荐系统重构，将响应时间降低40%，日活用户增长25%",
-        "设计并实现实时特征计算平台，支持每秒百万级特征计算",
-        "建立技术规范和Code Review机制，代码质量显著提升",
-        "指导5名初级工程师成长，其中2人晋升为技术骨干"
-      ],
-      "technologies": ["Go", "Kubernetes", "Redis", "Kafka", "TensorFlow"]
+      "description": "作为架构管理团队一员，跟进全行架构规划、管理和治理等工作",
+      "achievements": [""],
+      "technologies": ["Python", "Agents", "Oracle"]
     },
     {
-      "company": "阿里巴巴",
-      "position": "资深开发工程师",
-      "period": "2017.07 - 2021.02",
-      "location": "杭州",
+      "company": "恒大地产集团有限公司",
+      "position": "BI工程师",
+      "period": "2017.07 - 2019.05",
+      "location": "深圳",
       "type": "全职",
-      "description": "参与淘宝核心交易系统的开发与维护，负责高并发场景下的系统优化",
+      "description": "参与集团内BI平台开发和维护，为各业务条线定制化开发各类报表仪表盘",
       "achievements": [
         "优化交易下单流程，支持双11峰值每秒50万订单",
         "设计分布式事务解决方案，保障数据一致性",
         "开发自动化测试框架，测试覆盖率提升至85%",
         "参与开源项目贡献，获得Apache Committer资格"
       ],
-      "technologies": ["Java", "Spring Cloud", "MySQL", "RocketMQ", "Docker"]
+      "technologies": ["Oralce", "FineReport", "FineBI"]
     }
   ],
   "projects": [
@@ -117,57 +114,48 @@
   ],
   "skills": {
     "programming": [
-      {"name": "Go", "level": 95, "years": 5},
-      {"name": "Java", "level": 90, "years": 8},
-      {"name": "Python", "level": 85, "years": 6},
-      {"name": "TypeScript", "level": 80, "years": 4},
-      {"name": "Rust", "level": 70, "years": 2}
+      { "name": "Python", "level": 85, "years": 6 },
+      { "name": "AI Agents", "level": 50, "years": 0.5 }
     ],
     "frameworks": [
-      {"name": "Spring Cloud", "level": 90},
-      {"name": "Kubernetes", "level": 85},
-      {"name": "React", "level": 80},
-      {"name": "TensorFlow", "level": 75}
+      { "name": "Spring Cloud", "level": 90 },
+      { "name": "Kubernetes", "level": 85 },
+      { "name": "React", "level": 80 },
+      { "name": "TensorFlow", "level": 75 }
     ],
     "databases": [
-      {"name": "MySQL", "level": 90},
-      {"name": "Redis", "level": 88},
-      {"name": "MongoDB", "level": 80},
-      {"name": "Elasticsearch", "level": 82}
+      { "name": "MySQL", "level": 90 },
+      { "name": "Oracle", "level": 90 },
+      { "name": "OceanBase", "level": 80 }
     ],
     "tools": [
-      {"name": "Docker", "level": 90},
-      {"name": "Git", "level": 95},
-      {"name": "Linux", "level": 88},
-      {"name": "CI/CD", "level": 85}
+      { "name": "Docker", "level": 90 },
+      { "name": "Git", "level": 95 },
+      { "name": "Linux", "level": 88 },
+      { "name": "CI/CD", "level": 85 }
     ],
-    "soft": [
-      "技术领导力",
-      "团队协作",
-      "问题解决",
-      "技术分享",
-      "项目管理"
-    ]
+    "soft": ["团队协作", "问题解决", "技术分享", "项目管理"]
   },
   "certifications": [
     {
-      "name": "AWS Solutions Architect Professional",
-      "issuer": "Amazon Web Services",
-      "date": "2023",
-      "credential": "AWS-SAP-12345"
+      "name": "Project Management Professional",
+      "issuer": "Project Management Institute",
+      "date": "2022",
+      "credential": ""
     },
     {
-      "name": "Kubernetes Administrator (CKA)",
-      "issuer": "Cloud Native Computing Foundation",
-      "date": "2022",
-      "credential": "CKA-67890"
+      "name": "Artificial Intelligence Trainer",
+      "issuer": "Ministry of Human Resources and Social Security(MOHRSS)",
+      "date": "2026",
+      "credential": ""
     }
   ],
   "languages": [
-    {"name": "中文", "level": "母语"},
-    {"name": "英语", "level": "流利 (CET-6, TOEFL 105)"}
+    { "name": "粤语", "level": "母语" },
+    { "name": "普通话", "level": "母语" },
+    { "name": "英语", "level": "流利 (CET-6)" }
   ],
-  "interests": ["开源贡献", "技术写作", "马拉松", "摄影"],
+  "interests": ["网球"],
   "theme": {
     "primaryColor": "#2563eb",
     "secondaryColor": "#7c3aed",
