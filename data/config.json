@@ -15,32 +15,6 @@
     "website": "https://nickylam.github.io/resume",
     "wechat": "Nicky_2333"
   },
-  "education": [
-    {
-      "school": "中山大学",
-      "degree": "软件工程 · 硕士",
-      "period": "2015 - 2017",
-      "location": "广州",
-      "highlights": ["研究方向：数据挖掘"]
-    },
-    {
-      "school": "中山大学",
-      "degree": "统计学 · 双专业",
-      "period": "2013 - 2015",
-      "location": "广州",
-      "highlights": ["主修课程：微积分、几何与代数、数理统计学"]
-    },
-    {
-      "school": "中山大学",
-      "degree": "地理信息系统GIS · 学士",
-      "period": "2010 - 2014",
-      "location": "广州",
-      "highlights": [
-        "主修课程：数据结构、地理信息系统、遥感理论、自然地理学",
-        "担任学生会文体部部长"
-      ]
-    }
-  ],
   "experience": [
     {
       "company": "广东华兴银行股份有限公司",
@@ -48,9 +22,16 @@
       "period": "2019.10 - 至今",
       "location": "广州",
       "type": "全职",
-      "description": "作为架构管理团队一员，跟进全行架构规划、管理和治理等工作",
-      "achievements": [""],
-      "technologies": ["Python", "Agents", "Oracle"]
+      "description": "作为架构管理团队一员，协助制定全行架构规划，负责数据领域架构规划、管理和治理等工作",
+      "achievements": [
+        "参与制定行内数智核心规划，推动数智核心落地建设，助力行内数字化转型",
+        "完成NAS空间治理，制定NAS使用规范，有效回收NAS盘20+T，控制存量空间满足未来两年使用要求，同时推广对象存储使用建设",
+        "制定行内工具类系统分级分类方案，修订全行应用系统分级分类管理办法，推动相关系统完整整改符合分级分类管理要求",
+        "行内开源软件管理办法制定",
+        "生僻字治理，完成生僻字治理方案设计并落地实施",
+        "绩效系统架构提升，完善绩效跑批关键链路"
+      ],
+      "technologies": ["Python", "Agents", "Oracle", "MPP数据库"]
     },
     {
       "company": "恒大地产集团有限公司",
@@ -59,57 +40,19 @@
       "location": "深圳",
       "type": "全职",
       "description": "参与集团内BI平台开发和维护，为各业务条线定制化开发各类报表仪表盘",
-      "achievements": [
-        "优化交易下单流程，支持双11峰值每秒50万订单",
-        "设计分布式事务解决方案，保障数据一致性",
-        "开发自动化测试框架，测试覆盖率提升至85%",
-        "参与开源项目贡献，获得Apache Committer资格"
-      ],
+      "achievements": ["完成地产资金部、院线的数据填报系统开发落地"],
       "technologies": ["Oralce", "FineReport", "FineBI"]
     }
   ],
   "projects": [
     {
-      "name": "智能推荐引擎",
-      "role": "技术负责人",
-      "period": "2022.01 - 2023.06",
-      "description": "基于深度学习的个性化推荐系统，支持多场景实时推荐",
-      "highlights": [
-        "采用Transformer架构，实现用户行为序列建模",
-        "构建特征工程平台，支持1000+维度的特征提取",
-        "实现A/B测试框架，支持快速迭代验证",
-        "推荐准确率提升35%，用户停留时长增加28%"
-      ],
+      "name": "",
+      "role": "",
+      "period": "",
+      "description": "",
+      "highlights": [""],
       "technologies": ["Python", "PyTorch", "Flink", "Elasticsearch"],
       "link": "https://github.com/zhangsan/smart-recommendation"
-    },
-    {
-      "name": "微服务治理平台",
-      "role": "核心开发者",
-      "period": "2020.03 - 2021.02",
-      "description": "一站式微服务管理平台，提供服务注册、配置管理、监控告警等功能",
-      "highlights": [
-        "设计服务注册中心，支持万级服务实例管理",
-        "实现动态配置推送，配置变更秒级生效",
-        "集成Prometheus和Grafana，构建完整监控体系",
-        "平台接入200+微服务，显著降低运维成本"
-      ],
-      "technologies": ["Go", "gRPC", "etcd", "Prometheus"],
-      "link": "https://github.com/zhangsan/microservice-platform"
-    },
-    {
-      "name": "开源工具库 - DataFlow",
-      "role": "创建者 & 维护者",
-      "period": "2019.05 - 至今",
-      "description": "高性能数据处理工具库，提供流式处理、批处理和实时计算能力",
-      "highlights": [
-        "GitHub Star 3.2k+，被多家企业采用",
-        "支持插件化扩展，提供丰富的数据处理算子",
-        "完善的文档和示例，降低使用门槛",
-        "持续维护更新，积极响应社区Issue"
-      ],
-      "technologies": ["Rust", "Arrow", "WASM"],
-      "link": "https://github.com/zhangsan/dataflow"
     }
   ],
   "skills": {
@@ -136,6 +79,32 @@
     ],
     "soft": ["团队协作", "问题解决", "技术分享", "项目管理"]
   },
+  "education": [
+    {
+      "school": "中山大学",
+      "degree": "软件工程 · 硕士",
+      "period": "2015 - 2017",
+      "location": "广州",
+      "highlights": ["研究方向：数据挖掘"]
+    },
+    {
+      "school": "中山大学",
+      "degree": "统计学 · 双专业",
+      "period": "2013 - 2015",
+      "location": "广州",
+      "highlights": ["主修课程：微积分、几何与代数、数理统计学"]
+    },
+    {
+      "school": "中山大学",
+      "degree": "地理信息系统GIS · 学士",
+      "period": "2010 - 2014",
+      "location": "广州",
+      "highlights": [
+        "主修课程：数据结构、地理信息系统、遥感理论、自然地理学",
+        "担任学生会文体部部长"
+      ]
+    }
+  ],
   "certifications": [
     {
       "name": "Project Management Professional",
