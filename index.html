@@ -8,82 +8,74 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Noto+Serif+SC:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="scanline" aria-hidden="true"></div>
-    <div class="grid-glow" aria-hidden="true"></div>
-
-    <main class="page" id="app">
-      <header class="hero panel reveal">
-        <div>
-          <p class="kicker">AI ENGINEER PROFILE</p>
-          <h1 id="name">Your Name</h1>
-          <p id="headline" class="headline"></p>
-          <p id="location" class="meta-line"></p>
+    <div class="page-noise" aria-hidden="true"></div>
+    <main class="resume" id="app">
+      <header class="hero reveal">
+        <div class="hero-main">
+          <p class="hero-kicker">AI RESUME / CV</p>
+          <h1 id="name">你的名字</h1>
+          <p id="headline" class="hero-headline"></p>
+          <p id="location" class="hero-meta"></p>
           <div id="highlights" class="chips"></div>
         </div>
-        <div class="hero-actions">
-          <a id="emailLink" class="btn" href="#">Contact</a>
-          <a id="cvLink" class="btn ghost" href="#" target="_blank" rel="noreferrer">CV</a>
+        <div class="hero-side">
+          <a id="emailLink" class="link-btn" href="#">联系我</a>
+          <a id="cvLink" class="link-btn ghost" href="#" target="_blank" rel="noreferrer">下载简历</a>
         </div>
       </header>
 
-      <section class="metrics reveal" style="--delay: 0.06s" id="metrics"></section>
+      <section class="metrics reveal" style="--delay: 0.05s" id="metrics"></section>
 
-      <section class="layout">
-        <section class="left-col">
-          <article class="panel reveal" style="--delay: 0.1s">
-            <h2>Summary</h2>
-            <p id="summary"></p>
-          </article>
+      <section class="section reveal" style="--delay: 0.08s">
+        <h2>个人概述</h2>
+        <p id="summary"></p>
+      </section>
 
-          <article class="panel reveal" style="--delay: 0.14s">
-            <h2>Skills Matrix</h2>
-            <div class="skill-group">
-              <h3>Core</h3>
-              <div id="skillsCore" class="chips"></div>
-            </div>
-            <div class="skill-group">
-              <h3>Infra</h3>
-              <div id="skillsTools" class="chips"></div>
-            </div>
-            <div class="skill-group">
-              <h3>Languages</h3>
-              <div id="skillsLanguages" class="chips"></div>
-            </div>
-          </article>
+      <section class="section reveal" style="--delay: 0.12s">
+        <h2>技能矩阵</h2>
+        <div class="skill-group">
+          <h3>核心技术</h3>
+          <div id="skillsCore" class="chips"></div>
+        </div>
+        <div class="skill-group">
+          <h3>工程与基础设施</h3>
+          <div id="skillsTools" class="chips"></div>
+        </div>
+        <div class="skill-group">
+          <h3>语言能力</h3>
+          <div id="skillsLanguages" class="chips"></div>
+        </div>
+      </section>
 
-          <article class="panel reveal" style="--delay: 0.18s">
-            <h2>Links</h2>
-            <ul id="socialList" class="links"></ul>
-          </article>
-        </section>
+      <section class="section reveal" style="--delay: 0.16s">
+        <h2>工作经历</h2>
+        <div id="experienceList" class="stack"></div>
+      </section>
 
-        <section class="right-col">
-          <article class="panel reveal" style="--delay: 0.22s">
-            <h2>Experience Timeline</h2>
-            <div id="experienceList" class="stack"></div>
-          </article>
+      <section class="section reveal" style="--delay: 0.2s">
+        <h2>代表项目</h2>
+        <div id="projectList" class="stack"></div>
+      </section>
 
-          <article class="panel reveal" style="--delay: 0.26s">
-            <h2>Selected Projects</h2>
-            <div id="projectList" class="stack"></div>
-          </article>
+      <section class="section reveal" style="--delay: 0.24s">
+        <h2>教育背景</h2>
+        <div id="educationList" class="stack"></div>
+      </section>
 
-          <article class="panel reveal" style="--delay: 0.3s">
-            <h2>Education</h2>
-            <div id="educationList" class="stack"></div>
-          </article>
-        </section>
+      <section class="section reveal" style="--delay: 0.28s">
+        <h2>相关链接</h2>
+        <ul id="socialList" class="links"></ul>
       </section>
     </main>
 
     <template id="metricTemplate">
-      <article class="metric panel-mini">
+      <article class="metric">
         <p class="metric-label"></p>
         <p class="metric-value"></p>
       </article>

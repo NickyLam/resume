@@ -17,6 +17,11 @@ function renderMetrics(metrics = []) {
   const root = document.getElementById("metrics");
   const template = document.getElementById("metricTemplate");
   root.innerHTML = "";
+  if (!metrics || metrics.length === 0) {
+    root.style.display = "none";
+    return;
+  }
+  root.style.display = "grid";
 
   (metrics || []).slice(0, 4).forEach((entry) => {
     const node = template.content.cloneNode(true);
@@ -127,7 +132,7 @@ async function loadResume() {
     renderList("socialList", config.socials);
 
     renderItems("experienceList", config.experience, (entry) => ({
-      title: `${entry.role || "Role"} @ ${entry.company || "Company"}`,
+      title: [entry.company || "Company", entry.role || "Role"].filter(Boolean).join(" | "),
       meta: entry.period || "",
       subtitle: entry.location || "",
       bullets: entry.achievements || [],
