@@ -1,220 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="个人在线简历 - 科技风格">
-    <meta name="keywords" content="简历,个人主页,全栈工程师,开发者">
-    <title id="page-title">加载中...</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="bg-animation">
-        <div class="grid-lines"></div>
-        <div class="floating-particles" id="particles"></div>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Resume...</title>
+    <meta name="description" content="Personal resume website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scanline" aria-hidden="true"></div>
+    <div class="grid-glow" aria-hidden="true"></div>
 
-    <nav class="nav-bar">
-        <div class="nav-logo">
-            <span class="logo-text">&lt;DEV/&gt;</span>
+    <main class="page" id="app">
+      <header class="hero panel reveal">
+        <div>
+          <p class="kicker">AI ENGINEER PROFILE</p>
+          <h1 id="name">Your Name</h1>
+          <p id="headline" class="headline"></p>
+          <p id="location" class="meta-line"></p>
+          <div id="highlights" class="chips"></div>
         </div>
-        <ul class="nav-links">
-            <li><a href="#about" class="nav-link active">关于我</a></li>
-            <li><a href="#experience" class="nav-link">工作经历</a></li>
-            <li><a href="#projects" class="nav-link">项目经验</a></li>
-            <li><a href="#skills" class="nav-link">技能特长</a></li>
-            <li><a href="#contact" class="nav-link">联系方式</a></li>
-        </ul>
-        <button class="nav-toggle" id="navToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </nav>
+        <div class="hero-actions">
+          <a id="emailLink" class="btn" href="#">Contact</a>
+          <a id="cvLink" class="btn ghost" href="#" target="_blank" rel="noreferrer">CV</a>
+        </div>
+      </header>
 
-    <main class="main-content">
-        <section id="about" class="section hero-section">
-            <div class="hero-content">
-                <div class="avatar-container">
-                    <div class="avatar-ring"></div>
-                    <div class="avatar-ring delay-1"></div>
-                    <div class="avatar-ring delay-2"></div>
-                    <img id="avatar" src="" alt="头像" class="avatar">
-                </div>
-                <div class="hero-info">
-                    <h1 class="hero-name" id="name">加载中...</h1>
-                    <h2 class="hero-title" id="title">加载中...</h2>
-                    <div class="hero-status">
-                        <span class="status-dot"></span>
-                        <span id="availability">加载中...</span>
-                    </div>
-                    <p class="hero-summary" id="summary">加载中...</p>
-                    <div class="hero-location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span id="location">加载中...</span>
-                    </div>
-                </div>
+      <section class="metrics reveal" style="--delay: 0.06s" id="metrics"></section>
+
+      <section class="layout">
+        <section class="left-col">
+          <article class="panel reveal" style="--delay: 0.1s">
+            <h2>Summary</h2>
+            <p id="summary"></p>
+          </article>
+
+          <article class="panel reveal" style="--delay: 0.14s">
+            <h2>Skills Matrix</h2>
+            <div class="skill-group">
+              <h3>Core</h3>
+              <div id="skillsCore" class="chips"></div>
             </div>
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-                <span>向下滚动</span>
+            <div class="skill-group">
+              <h3>Infra</h3>
+              <div id="skillsTools" class="chips"></div>
             </div>
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <div id="skillsLanguages" class="chips"></div>
+            </div>
+          </article>
+
+          <article class="panel reveal" style="--delay: 0.18s">
+            <h2>Links</h2>
+            <ul id="socialList" class="links"></ul>
+          </article>
         </section>
 
-        <section id="education" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-icon"><i class="fas fa-graduation-cap"></i></span>
-                    教育背景
-                </h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="timeline" id="education-timeline">
-            </div>
-        </section>
+        <section class="right-col">
+          <article class="panel reveal" style="--delay: 0.22s">
+            <h2>Experience Timeline</h2>
+            <div id="experienceList" class="stack"></div>
+          </article>
 
-        <section id="experience" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-icon"><i class="fas fa-briefcase"></i></span>
-                    工作经历
-                </h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="timeline" id="experience-timeline">
-            </div>
-        </section>
+          <article class="panel reveal" style="--delay: 0.26s">
+            <h2>Selected Projects</h2>
+            <div id="projectList" class="stack"></div>
+          </article>
 
-        <section id="projects" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-icon"><i class="fas fa-rocket"></i></span>
-                    项目经验
-                </h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="projects-grid" id="projects-grid">
-            </div>
+          <article class="panel reveal" style="--delay: 0.3s">
+            <h2>Education</h2>
+            <div id="educationList" class="stack"></div>
+          </article>
         </section>
-
-        <section id="skills" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-icon"><i class="fas fa-code"></i></span>
-                    技能特长
-                </h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="skills-container">
-                <div class="skills-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-terminal"></i>
-                        编程语言
-                    </h3>
-                    <div class="skills-bars" id="programming-skills">
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-layer-group"></i>
-                        框架 & 平台
-                    </h3>
-                    <div class="skills-bars" id="frameworks-skills">
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-database"></i>
-                        数据库
-                    </h3>
-                    <div class="skills-bars" id="databases-skills">
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-tools"></i>
-                        工具 & 平台
-                    </h3>
-                    <div class="skills-bars" id="tools-skills">
-                    </div>
-                </div>
-                <div class="skills-category soft-skills">
-                    <h3 class="category-title">
-                        <i class="fas fa-users"></i>
-                        软技能
-                    </h3>
-                    <div class="skills-tags" id="soft-skills">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-icon"><i class="fas fa-certificate"></i></span>
-                    认证资质
-                </h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="certifications-grid" id="certifications-grid">
-            </div>
-        </section>
-
-        <section id="languages" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-icon"><i class="fas fa-language"></i></span>
-                    语言能力
-                </h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="languages-container" id="languages-container">
-            </div>
-        </section>
-
-        <section id="interests" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-icon"><i class="fas fa-heart"></i></span>
-                    兴趣爱好
-                </h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="interests-container" id="interests-container">
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="section-header">
-                <h2 class="section-title">
-                    <span class="title-icon"><i class="fas fa-envelope"></i></span>
-                    联系方式
-                </h2>
-                <div class="title-line"></div>
-            </div>
-            <div class="contact-container">
-                <div class="contact-cards" id="contact-cards">
-                </div>
-            </div>
-        </section>
+      </section>
     </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <p class="copyright">&copy; <span id="year"></span> <span id="footer-name"></span>. All rights reserved.</p>
-            <p class="footer-tech">Built with <i class="fas fa-heart pulse"></i> and modern web technologies</p>
+    <template id="metricTemplate">
+      <article class="metric panel-mini">
+        <p class="metric-label"></p>
+        <p class="metric-value"></p>
+      </article>
+    </template>
+
+    <template id="itemTemplate">
+      <article class="item">
+        <div class="item-head">
+          <h3 class="item-title"></h3>
+          <p class="item-meta"></p>
         </div>
-    </footer>
+        <p class="item-subtitle"></p>
+        <ul class="item-bullets"></ul>
+        <div class="chips item-chips"></div>
+      </article>
+    </template>
 
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <script src="js/app.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

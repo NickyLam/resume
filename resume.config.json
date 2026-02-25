@@ -1,0 +1,97 @@
+{
+  "lang": "zh-CN",
+  "basics": {
+    "name": "你的名字",
+    "headline": "AI 应用工程师 | LLM 系统与全栈产品交付",
+    "location": "Shanghai, China",
+    "phone": "+86 138-0000-0000",
+    "email": "you@example.com",
+    "cvUrl": "./cv.pdf"
+  },
+  "summary": "专注把 AI 能力转化为真实业务价值，覆盖 Agent 产品、RAG 检索、推理服务与工程化部署。擅长用最小复杂度实现可维护、可观测、可扩展的系统。",
+  "highlights": [
+    "LLM 产品化",
+    "RAG / Agent",
+    "高性能 Web",
+    "端到端交付"
+  ],
+  "metrics": [
+    { "label": "Years", "value": "6+" },
+    { "label": "AI Projects", "value": "18" },
+    { "label": "Latency Drop", "value": "-43%" },
+    { "label": "Uptime", "value": "99.95%" }
+  ],
+  "skills": {
+    "core": ["TypeScript", "Python", "Node.js", "React", "SQL"],
+    "tools": ["FastAPI", "PostgreSQL", "Redis", "Docker", "Kubernetes", "AWS"],
+    "languages": ["中文", "English"]
+  },
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/your-id" },
+    { "label": "LinkedIn", "url": "https://www.linkedin.com/in/your-id" },
+    { "label": "Blog", "url": "https://your-site.example.com" }
+  ],
+  "experience": [
+    {
+      "company": "Example AI Labs",
+      "role": "Senior AI Engineer",
+      "period": "2023.03 - Present",
+      "location": "Remote",
+      "achievements": [
+        "负责企业知识助手架构，检索命中率提升到 84%。",
+        "设计推理网关和缓存策略，平均响应延迟降低 43%。",
+        "落地模型评估体系与灰度发布，线上稳定性提升。"
+      ],
+      "tech": ["LLM", "RAG", "TypeScript", "Python", "PostgreSQL"]
+    },
+    {
+      "company": "Data Systems Inc.",
+      "role": "Full-Stack Engineer",
+      "period": "2020.06 - 2023.02",
+      "location": "Shanghai",
+      "achievements": [
+        "从 0 到 1 搭建运营平台，支持多团队协作。",
+        "建立前后端标准化发布流程，迭代周期缩短到 1/3。"
+      ],
+      "tech": ["React", "Node.js", "Redis", "Docker"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Multi-Agent Support Copilot",
+      "period": "2025",
+      "description": "多代理客服协同系统，自动分诊与知识检索增强。",
+      "highlights": [
+        "将工单首响时间从 10 分钟降到 90 秒。",
+        "通过工具调用和回退策略提升任务完成率。"
+      ],
+      "tech": ["Agent", "OpenAI API", "FastAPI", "React"]
+    },
+    {
+      "name": "Realtime Inference Monitor",
+      "period": "2024",
+      "description": "模型调用监控与成本洞察平台。",
+      "highlights": [
+        "支持 token 成本追踪、错误聚合和 SLA 报警。"
+      ],
+      "tech": ["TypeScript", "ClickHouse", "Grafana"]
+    }
+  ],
+  "education": [
+    {
+      "school": "某某大学",
+      "degree": "本科",
+      "major": "计算机科学与技术",
+      "period": "2016 - 2020",
+      "highlights": ["ACM 校队", "优秀毕业生"]
+    }
+  ],
+  "theme": {
+    "accent": "#00e6ff",
+    "accent2": "#9aff2b"
+  },
+  "seo": {
+    "title": "你的名字 | AI 简历主页",
+    "description": "偏 AI 科技风的个人简历主页，快速浏览经历、项目与核心能力。"
+  }
+}
